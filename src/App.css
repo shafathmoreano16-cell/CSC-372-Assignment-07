@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #020b2d;
+  color: white;
+}
+
+.app {
+  text-align: center;
+  padding: 40px 20px 60px;
+}
+
+h1 {
+  font-size: 72px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  line-height: 1.2;
+}
+
+h2 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+img {
+  width: 160px;
+  margin: 10px;
+  cursor: pointer;
+  border: 3px solid transparent;
+  border-radius: 14px;
+  background-color: white;
+  transition: transform 0.2s ease, border 0.2s ease;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+.selected {
+  border: 4px solid limegreen;
+}
+
+.computer-section {
+  margin-top: 40px;
+}
+
+.computer-image {
+  width: 170px;
+}
+
+.shuffle {
+  animation: pulse 0.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1.08);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+}
+
+.result-section {
+  margin-top: 30px;
+}
+
+.result-text {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.score-section {
+  margin-top: 30px;
+}
+
+.score-board {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  font-size: 22px;
+  font-weight: bold;
+  flex-wrap: wrap;
+}
+
+.reset-section {
+  margin-top: 25px;
+}
+
+.reset-button {
+  padding: 14px 28px;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: white;
+  color: #020b2d;
+  font-weight: bold;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.reset-button:hover {
+  transform: scale(1.05);
+  opacity: 0.95;
+}
